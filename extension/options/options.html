@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Print to Markdown options</title>
+  <link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+  <h1>Print to Markdown</h1>
+  <label>
+    <span>What to convert</span>
+    <select name="mode">
+      <option value="auto">Article when one is detected, otherwise the whole page</option>
+      <option value="article">Article only (Readability)</option>
+      <option value="full">Whole page</option>
+    </select>
+  </label>
+  <label class="row"><input type="checkbox" name="frontMatter"> <span>Add YAML front matter (title, source, author, date)</span></label>
+  <label class="row"><input type="checkbox" name="askWhereToSave"> <span>Ask where to save each file</span></label>
+  <label>
+    <span>Send to Claude</span>
+    <select name="claudeMode">
+      <option value="prefill">Open claude.ai with the Markdown prefilled (clipboard fallback when too long)</option>
+      <option value="clipboard">Copy the Markdown and open claude.ai</option>
+    </select>
+  </label>
+  <label>
+    <span>Prefill limit (URL-encoded characters)</span>
+    <input type="number" name="prefillLimit" min="1000" step="1000">
+  </label>
+  <p class="hint">Shortcuts can be changed at chrome://extensions/shortcuts.</p>
+  <p class="status" id="status"></p>
+  <script src="options.js" type="module"></script>
+</body>
+</html>

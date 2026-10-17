@@ -1,0 +1,17 @@
+{
+  "name": "print-to-markdown",
+  "version": "1.0.0",
+  "description": "Chrome extension: save, copy or send the current page as Markdown from the print dialog, toolbar, context menu or a shortcut.",
+  "scripts": {
+    "vendor": "sh scripts/vendor.sh",
+    "zip": "sh scripts/vendor.sh && mkdir -p dist && rm -f dist/print-to-markdown.zip && (cd extension && zip -qr ../dist/print-to-markdown.zip .)",
+    "lint": "node --check extension/background.js && node --check extension/content/convert.js && node --check extension/lib/*.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "private": true
+}

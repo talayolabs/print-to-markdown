@@ -1,0 +1,17 @@
+:root { color-scheme: light dark; font: 13px/1.4 system-ui, sans-serif; }
+body { margin: 0; padding: 14px 16px; }
+body.popup { width: 300px; }
+h1 { font-size: 15px; margin: 0 0 4px; }
+.hint { margin: 0 0 10px; opacity: 0.7; }
+button { display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 6px 0; padding: 8px 10px; font: inherit; border-radius: 6px; border: 1px solid color-mix(in srgb, currentColor 25%, transparent); background: color-mix(in srgb, currentColor 6%, transparent); cursor: pointer; }
+button:hover:not(:disabled) { background: color-mix(in srgb, currentColor 14%, transparent); }
+button:disabled { opacity: 0.6; cursor: progress; }
+kbd { font: 11px ui-monospace, monospace; opacity: 0.6; }
+.status { min-height: 1.4em; margin: 8px 0 0; }
+.status.error { color: #c62828; }
+footer { display: flex; flex-direction: column; gap: 4px; margin-top: 10px; padding-top: 8px; border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent); opacity: 0.75; }
+label { display: block; margin: 10px 0; }
+label > span { display: block; font-weight: 600; margin-bottom: 2px; }
+select, input[type=number] { font: inherit; padding: 4px 6px; }
+.row { display: flex; align-items: center; gap: 8px; }
+.row span { font-weight: normal; }

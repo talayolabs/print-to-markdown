@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Print to Markdown</title>
+  <link rel="stylesheet" href="../shared.css">
+</head>
+<body class="popup">
+  <h1>Print to Markdown</h1>
+  <p class="hint" id="hint">Converts the selection if you have one, otherwise the page.</p>
+  <button data-action="md-save">Save as Markdown <kbd>Alt+Shift+S</kbd></button>
+  <button data-action="md-copy">Copy as Markdown <kbd>Alt+Shift+M</kbd></button>
+  <button data-action="md-claude">Send to Claude <kbd>Alt+Shift+C</kbd></button>
+  <p class="status" id="status" aria-live="polite"></p>
+  <footer>
+    <a href="#" id="options">Options</a>
+    <span>Also available as a print destination (Ctrl+P → See more…)</span>
+  </footer>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
