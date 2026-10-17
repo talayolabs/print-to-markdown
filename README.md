@@ -6,6 +6,8 @@ to "print to PDF": Chrome's print dialog.
 
 ![Print dialog with Markdown destinations](docs/print-dialog.png)
 
+![Toolbar popup](docs/popup.png)
+
 ## What you get
 
 | Trigger | How |
